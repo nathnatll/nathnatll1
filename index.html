@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -66,21 +66,23 @@
     font-size: 13px;
     color: #ddd;
   }
-    .about-section {
+
+  /* ABOUT SECTION */
+  .about-section {
     margin-top: 20px;
     padding: 20px;
     background: #0e0e17;
     border: 1px solid #222;
     border-radius: 10px;
-    display: none; /* hidden at first */
+    display: none;
     color: #ddd;
-}
+  }
 
-.about-section h2 {
+  .about-section h2 {
     margin-bottom: 10px;
     color: #4fa3ff;
     font-size: 22px;
-}
+  }
 </style>
 </head>
 <body>
@@ -92,21 +94,22 @@
     <h1 class="main-heading">Hi — I build clean interfaces and simple portfolio.</h1>
     <p class="sub-heading">Focused on clarity, performance, and subtle interactions. I prefer small, maintainable projects that scale.</p>
 
+    <!-- WORKING BUTTON -->
     <button id="about-btn">About me</button>
-    <button>About me</button>
 
     <div class="project-section">
       Coming soon
     </div>
       
-<div id="about-section" class="about-section">
-    <h2>About Me</h2>
-    <p>
-        Hi, I'm Nathaniel Bautista — a designer and frontend developer focused on
-        clarity, performance, and minimal design. I enjoy building maintainable
-        and scalable projects with clean interfaces and subtle interactions.
-    </p>
-</div>
+    <!-- ABOUT SECTION -->
+    <div id="about-section" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Nathaniel Bautista — a designer and frontend developer focused on
+            clarity, performance, and minimal design. I enjoy building maintainable
+            and scalable projects with clean interfaces and subtle interactions.
+        </p>
+    </div>
 
     <div class="coming-soon">Coming soon</div>
   </div>
@@ -114,18 +117,19 @@
   <div class="footer">
     © Nath Natll — Built with HTML & CSS
   </div>
-    <script>
-    const aboutBtn = document.getElementById("about-btn");
-    const aboutSection = document.getElementById("about-section");
 
-    aboutBtn.addEventListener("click", () => {
-        // Toggle visibility
-        if (aboutSection.style.display === "none") {
-            aboutSection.style.display = "block";
-        } else {
-            aboutSection.style.display = "none";
-        }
-    });
+<script>
+  const aboutBtn = document.getElementById("about-btn");
+  const aboutSection = document.getElementById("about-section");
+
+  aboutBtn.addEventListener("click", () => {
+      if (aboutSection.style.display === "none") {
+          aboutSection.style.display = "block";
+      } else {
+          aboutSection.style.display = "none";
+      }
+  });
 </script>
+
 </body>
 </html>
